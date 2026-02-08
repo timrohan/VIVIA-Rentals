@@ -1,28 +1,20 @@
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import EmbedPropertyList from './pages/EmbedPropertyList';
+import Dashboard from './pages/Dashboard';
+import StripeConnectCallback from './pages/StripeConnectCallback';
+import ConnectStatus from './pages/ConnectStatus';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.jsx</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/owners/dashboard/embedpropertylist" element={<EmbedPropertyList />} />
+        <Route path="/connect/stripe/callback" element={<StripeConnectCallback />} />
+        <Route path="/owners/dashboard/connect-status" element={<ConnectStatus />} />
+      </Routes>
+    </Router>
   );
 }
 

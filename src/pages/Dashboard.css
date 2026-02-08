@@ -1,0 +1,307 @@
+.dashboard {
+  min-height: 100vh;
+  background: white;
+}
+
+/* Header */
+.dashboard-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 32px 24px;
+  text-align: center;
+}
+
+.header-content h1 {
+  margin: 0 0 8px 0;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.tagline {
+  margin: 0;
+  font-size: 16px;
+  opacity: 0.95;
+}
+
+/* Hero Section */
+.dashboard-hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 60px 24px;
+  text-align: center;
+}
+
+.hero-content h2 {
+  margin: 0 0 16px 0;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-content p {
+  margin: 0 0 32px 0;
+  font-size: 18px;
+  opacity: 0.95;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* CTA Button */
+.cta-button {
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
+  cursor: pointer;
+  border: none;
+}
+
+.cta-button.primary {
+  background: white;
+  color: #667eea;
+}
+
+.cta-button.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.cta-button.secondary {
+  background: #667eea;
+  color: white;
+  border: 2px solid #667eea;
+}
+
+.cta-button.secondary:hover {
+  background: #764ba2;
+  border-color: #764ba2;
+  transform: translateY(-2px);
+}
+
+/* Features Section */
+.features-section {
+  padding: 80px 24px;
+  background: #f9fafb;
+}
+
+.features-section h2 {
+  text-align: center;
+  font-size: 36px;
+  margin: 0 0 48px 0;
+  color: #333;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background: white;
+  padding: 32px 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+.feature-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.feature-card h3 {
+  margin: 0 0 12px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.feature-card p {
+  margin: 0;
+  font-size: 15px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Channels Section */
+.channels-section {
+  padding: 80px 24px;
+  background: white;
+}
+
+.channels-section h2 {
+  text-align: center;
+  font-size: 36px;
+  margin: 0 0 48px 0;
+  color: #333;
+}
+
+.channels-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.channel-item {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 40px 24px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.channel-item:hover {
+  transform: translateY(-4px);
+}
+
+.channel-icon {
+  font-size: 48px;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.channel-item h3 {
+  margin: 0 0 8px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.channel-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 80px 24px;
+  text-align: center;
+}
+
+.cta-section h2 {
+  margin: 0 0 16px 0;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.cta-section p {
+  margin: 0 0 32px 0;
+  font-size: 18px;
+  opacity: 0.95;
+}
+
+/* Footer */
+.dashboard-footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 24px;
+}
+
+.dashboard-footer p {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content h2 {
+    font-size: 28px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .features-section h2,
+  .channels-section h2,
+  .cta-section h2 {
+    font-size: 28px;
+  }
+
+  .features-grid,
+  .channels-grid {
+    gap: 24px;
+  }
+
+  .feature-card,
+  .channel-item {
+    padding: 24px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-content h1 {
+    font-size: 24px;
+  }
+
+  .dashboard-hero,
+  .features-section,
+  .channels-section,
+  .cta-section {
+    padding: 40px 16px;
+  }
+
+  .hero-content h2 {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+
+  .features-section h2,
+  .channels-section h2,
+  .cta-section h2 {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+
+  .features-grid,
+  .channels-grid {
+    gap: 16px;
+  }
+
+  .feature-card,
+  .channel-item {
+    padding: 20px 12px;
+  }
+
+  .feature-icon,
+  .channel-icon {
+    font-size: 36px;
+  }
+
+  .cta-button {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+}
